@@ -1,0 +1,38 @@
+{
+  "name": "notifications-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.js --exit",
+    "start": "node server.js",
+    "startJob": "node ./src/Jobs/notify",
+    "docker-server": "docker-compose up --build",
+    "docker-bash": "docker exec -it notifications-app_web_1 bash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariamMahmoud/Notifications-app.git"
+  },
+  "author": "MariamMahmoud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariamMahmoud/Notifications-app/issues"
+  },
+  "homepage": "https://github.com/MariamMahmoud/Notifications-app#readme",
+  "dependencies": {
+    "bipsms": "^0.6.9",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.0.0",
+    "mongoose": "^5.6.1",
+    "node-cron": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "lodash": "^4.17.19",
+    "mocha": "^8.0.1",
+    "nodemon": "^1.19.1",
+    "swagger-ui-express": "^4.1.4"
+  }
+}
