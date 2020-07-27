@@ -1,0 +1,22 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+jobs:
+  build-and-test:
+    docker:
+      - image: node:12
+      - image: mongo
+    executor:
+      name: node/default
+    environment: 
+      - MONGO_URL: "mongodb://localhost:27017/notifications-test-db"
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm test
+workflows:
+    build-and-test:
+      jobs:
+        - build-and-test
