@@ -1,25 +1,24 @@
 {
-  "name": "notifications-app",
+  "name": "<TODO_REPO_NAME>",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/**/*.js --exit",
     "start": "node server.js",
-    "startJob": "node ./src/Jobs/notify",
-    "docker-server": "docker-compose up --build",
-    "docker-bash": "docker exec -it notifications-app_web_1 bash"
+    "docker-build": "docker-compose up --build",
+    "docker-bash": "docker exec -it <TODO_REPO_NAME>_web_1 bash"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MariamMahmoud/Notifications-app.git"
+    "url": "git+https://github.com/MariamMahmoud/<TODO_REPO_NAME>.git"
   },
   "author": "MariamMahmoud",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MariamMahmoud/Notifications-app/issues"
+    "url": "https://github.com/MariamMahmoud/<TODO_REPO_NAME>/issues"
   },
-  "homepage": "https://github.com/MariamMahmoud/Notifications-app#readme",
+  "homepage": "https://github.com/MariamMahmoud/<TODO_REPO_NAME>#readme",
   "dependencies": {
     "bipsms": "^0.6.9",
     "express": "^4.17.1",
