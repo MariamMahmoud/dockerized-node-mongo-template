@@ -1,5 +1,5 @@
 {
-  "name": "<TODO_REPO_NAME>",
+  "name": "dockerized-node-mongo-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,24 +7,21 @@
     "test": "mocha test/**/*.js --exit",
     "start": "node server.js",
     "docker-build": "docker-compose up --build",
-    "docker-bash": "docker exec -it <TODO_REPO_NAME>_web_1 bash"
+    "docker-bash": "docker exec -it dockerized-node-mongo-template_web_1 bash"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MariamMahmoud/<TODO_REPO_NAME>.git"
+    "url": "git+https://github.com/MariamMahmoud/dockerized-node-mongo-template.git"
   },
   "author": "MariamMahmoud",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MariamMahmoud/<TODO_REPO_NAME>/issues"
+    "url": "https://github.com/MariamMahmoud/dockerized-node-mongo-template/issues"
   },
-  "homepage": "https://github.com/MariamMahmoud/<TODO_REPO_NAME>#readme",
+  "homepage": "https://github.com/MariamMahmoud/dockerized-node-mongo-template#readme",
   "dependencies": {
-    "bipsms": "^0.6.9",
     "express": "^4.17.1",
-    "firebase-admin": "^9.0.0",
-    "mongoose": "^5.6.1",
-    "node-cron": "^2.0.3"
+    "mongoose": "^5.6.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
